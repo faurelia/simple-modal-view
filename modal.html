@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Modal View</title>
+    <link href="modal.css" rel="stylesheet"/>
+
+    <style>
+        button { padding: 15px; font-size: 12px; background: indianred; color: #FFF; border: none }
+        .subheading { font-style: italic }
+    </style>
+</head>
+<body>
+
+<h1>Simple Modal View</h1>
+<h3 class="subheading">No jQuery library needed.</h3>
+
+<h4>Sizes</h4>
+<p>
+    <button data-target="simpleModal_1" data-toggle="modal">A Basic Modal</button>
+    <button data-target="simpleModal_2" data-toggle="modal">A Large Modal</button>
+    <button data-target="simpleModal_3" data-toggle="modal">A Small Modal</button>
+</p>
+
+<h4>Trigger</h4>
+<p>
+    <button data-target="simpleModal_4" data-toggle="modal">Trigger with a Button</button>
+    <a href="#" data-target="simpleModal_5" data-toggle="modal">Trigger with a Link</a>
+</p>
+
+<h4>Dismiss</h4>
+<p>
+    <button data-target="simpleModal_6" data-toggle="modal">Dismiss modal with [&times;] button</button>
+    <button data-target="simpleModal_7" data-toggle="modal">Dismiss modal with a custom button</button>
+</p>
+
+<div id="simpleModal_1" class="modal">
+    <div class="modal-window">
+        <h3>A Basic Modal</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+
+<div id="simpleModal_2" class="modal">
+    <div class="modal-window large">
+        <h3>A Large Modal</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+
+<div id="simpleModal_3" class="modal">
+    <div class="modal-window small">
+        <h3>A Small Modal</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+
+<div id="simpleModal_4" class="modal">
+    <div class="modal-window">
+        <h3>Triggered with a Button Modal</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+
+<div id="simpleModal_5" class="modal">
+    <div class="modal-window">
+        <h3>Triggered with a Link Modal</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+<div id="simpleModal_6" class="modal">
+    <div class="modal-window">
+        <span class="close" data-dismiss="modal">&times;</span>
+        <h3>Dismiss with [&times;] button</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+
+<div id="simpleModal_7" class="modal">
+    <div class="modal-window">
+        <h3>Dismiss with a custom button</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button data-dismiss="modal">Close</button>
+    </div>
+</div>
+
+<script type="application/javascript" src="modal.js"></script>
+</body>
+</html>
