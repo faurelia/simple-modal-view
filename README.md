@@ -6,7 +6,7 @@ A modal component without using the jQuery library.
 
 ### Installation
 
-Add the stylesheet and js link in the `<head>` part.
+Include the CSS and JS files.
 ```html
 <link href="modal.css" rel="stylesheet"/>
 <script type="application/javascript" src="modal.js"></script>
@@ -29,5 +29,5 @@ Add the stylesheet and js link in the `<head>` part.
 </div>
 ```
 
-### Notes
-See `modal.html` for further examples.
+### Demo
+See [modal.html](https://faurelia.github.io/simple-modal-view/modal.html) for examples.
